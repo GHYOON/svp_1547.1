@@ -2,7 +2,8 @@
   <members>
     <member name="VW.ste" />
     <member name="VV.ste" />
-    <member name="CPF.tst" />
+    <member name="FW.ste" />
+    <member name="CPF.ste" />
   </members>
   <params>
     <param name="eut_cpf.p_rated_prime" type="float">-3000.0</param>
@@ -13,6 +14,9 @@
     <param name="pvsim.typhoon.isc" type="float">50.0</param>
     <param name="hil.typhoon.eut_nominal_frequency" type="float">50.0</param>
     <param name="gridsim.typhoon.f_nom" type="float">50.0</param>
+    <param name="eut.f_min" type="float">56.0</param>
+    <param name="eut.f_nom" type="float">60.0</param>
+    <param name="eut.f_max" type="float">66.0</param>
     <param name="eut.v_low" type="float">207.0</param>
     <param name="gridsim.typhoon.v_nom" type="float">230.0</param>
     <param name="eut.v_nom" type="float">230.0</param>
@@ -35,7 +39,6 @@
     <param name="hil.typhoon.setting_name" type="string">ASGC_full_settings.runx</param>
     <param name="pvsim.typhoon.pv_directory" type="string">D:/SVP/1547.1 (5-10-19)/Lib/svpelab/ASGC_Closed_loop_full_model/</param>
     <param name="hil.typhoon.hil_working_dir" type="string">D:\SVP\1547.1 (5-10-19)\Lib\svpelab\ASGC_Closed_loop_full_model</param>
-    <param name="loadsim.mode" type="string">Disabled</param>
     <param name="hil.typhoon.auto_config" type="string">Disabled</param>
     <param name="gridsim.auto_config" type="string">Disabled</param>
     <param name="eut.imbalance_resp" type="string">EUT response to the positive sequence of voltages</param>
