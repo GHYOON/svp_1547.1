@@ -4,6 +4,7 @@
     <member name="VV.ste" />
     <member name="FW.ste" />
     <member name="CPF.ste" />
+    <member name="Interoperability Tests.tst" />
   </members>
   <params>
     <param name="eut_cpf.p_rated_prime" type="float">-3000.0</param>

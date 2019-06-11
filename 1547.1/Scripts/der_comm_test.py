@@ -282,6 +282,26 @@ def test_run():
 
     ts.log('---')
 
+    storage = eut.storage()
+    if storage is not None:
+        ts.log('DER storage:')
+        ts.log('  WChaMax: %s' % (storage.get('WChaMax')))
+        ts.log('  WChaGra: %s' % (storage.get('WChaGra')))
+        ts.log('  WDisChaGra: %s' % (storage.get('WDisChaGra')))
+        ts.log('  StorCtl_Mod: %s' % (storage.get('StorCtl_Mod')))
+        ts.log('  MinRsvPct: %s' % (storage.get('MinRsvPct')))
+        ts.log('  ChaState: %s' % (storage.get('ChaState')))
+        ts.log('  StorAval: %s' % (storage.get('StorAval')))
+        ts.log('  InBatV: %s' % (storage.get('InBatV')))
+        ts.log('  ChaSt: %s' % (storage.get('ChaSt')))
+        ts.log('  OutWRte: %s' % (storage.get('OutWRte')))
+        ts.log('  InWRte: %s' % (storage.get('InWRte')))
+        ts.log('  InOutWRte_WinTms: %s' % (storage.get('InOutWRte_WinTms')))
+        ts.log('  InOutWRte_RvrtTms: %s' % (storage.get('InOutWRte_RvrtTms')))
+        ts.log('  InOutWRte_RmpTms: %s' % (storage.get('InOutWRte_RmpTms')))
+    else:
+        ts.log_warning('DER storage not supported')
+
     status = eut.controls_status()
     if status is not None:
         ts.log('    Is Fixed_W enabled?: %s' % (status.get('Fixed_W')))
